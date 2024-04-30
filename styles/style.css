@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    85.2deg,
+    rgba(33, 3, 40, 1) 7.5%,
+    rgba(65, 5, 72, 1) 88.7%
+  );
+}
+
+.card {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.inner-body {
+  width: fit-content;
+}
+.card h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.inputContainer > input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #dddddd;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.inputContainer > button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 5px;
+  color: white;
+  background: rgb(78, 124, 10);
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.inputContainer > input:focus {
+  border: 4px solid rgb(78, 124, 10);
+}
+
+.inputContainer > button:hover {
+  background: rgb(78, 124, 10, 0.8);
+}
+
+.cardBody {
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+}
+
+.noData {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.content > img {
+  width: 10rem;
+  height: 10rem;
+  scale: 1.2;
+}
+
+.content h3 {
+  font-size: 3rem;
+  color: white;
+}
+
+.content > p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.content .bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content .bottom img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.content .bottom > div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.content .bottom h4 {
+  color: white;
+  font-size: 1rem;
+}
+.content .bottom p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+  .content > img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .content h3 {
+    font-size: 2rem;
+  }
+  .content > p {
+    font-size: 1rem;
+  }
+  .content .bottom img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .content .bottom h4 {
+    font-size: 0.8rem;
+  }
+  .content .bottom p {
+    font-size: 0.6rem;
+  }
+  .inputContainer > button {
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
+  .inputContainer > input {
+    font-size: 0.8rem;
+  }
+  .card h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 40%;
+  }
+}

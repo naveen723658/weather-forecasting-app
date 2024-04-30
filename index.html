@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="card">
+        <div class="inner-body">
+          <h1>Weather Forecast</h1>
+          <form class="inputContainer">
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Enter city name"
+            />
+            <button type="submit" id="add">Search</button>
+          </form>
+          <div class="cardBody">
+            <div class="content" style="display: none">
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="clouds"
+              />
+              <h3>0<span>&#176;</span>c</h3>
+              <p>City Name</p>
+              <div class="bottom">
+                <div class="humidity">
+                  <img src="../assets/humidity.png" alt="humidity" />
+                  <div>
+                    <h4>0%</h4>
+                    <p>Humidity</p>
+                  </div>
+                </div>
+                <div class="speed">
+                  <img src="../assets/wind.png" alt="humidity" />
+                  <div>
+                    <h4>0 km/h</h4>
+                    <p>Wind Speed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="noData">
+              <h2>No Result</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./styles/script.js"></script>
+  </body>
+</html>
